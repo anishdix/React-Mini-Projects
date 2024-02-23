@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import styles from "./App.module.css"
+
 
 function App() {
+  let [country,setCountry]=useState([])
+
+  useEffect( ()=>{
+    fetch("https://restcountries.com/v3.1/all")
+    .then((res)=>res.json())
+    .then((data)=>setCountry(data))
+    .catch((err)=>{console.log(err)})
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      {country.map((ele)=>(
+
+        
+        <div key={ele.cca3} className={styles.container}>
+        <img src={ele.flags.png}
+              alt={ele.flags.alt}
+              className={styles.image}/>
+        <h2 className={styles.heading}>{ele.name.common}</h2>
+      </div>
+              ))}
     </div>
   );
 }
