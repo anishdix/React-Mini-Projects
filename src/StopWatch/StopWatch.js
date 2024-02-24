@@ -23,7 +23,7 @@ function StopWatch() {
   {
     let min=Math.floor(time/60)
     let remainSec=time%60
-    return (`Time:${min}:${remainSec<10?"0":""}${remainSec}`)
+    return (`Time: ${min}:${remainSec<10?"0":""}${remainSec}`)
   }
   const handleReset=()=>{
     setRunning(false)
@@ -41,8 +41,8 @@ function StopWatch() {
       </p>
       <div>
 
-      <button onClick={handleStartStop}>{running?"stop":"start"}</button>
-      <button onClick={handleReset} >reset</button>
+      <button onClick={handleStartStop}>{running?"Stop":"Start"}</button>
+      <button onClick={handleReset} >Reset</button>
       </div>
       
     </div>
