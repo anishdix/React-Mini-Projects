@@ -29,6 +29,7 @@ const DisplayFullName = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <h2>Full Name Display</h2>
       <div className={styles.firstName}>
         <label>
           First Name:
