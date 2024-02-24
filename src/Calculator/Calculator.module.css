@@ -1,0 +1,13 @@
+.buttonCont
+{
+    margin-top: 20px;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    width:350px;
+    
+}
+.button{
+    border-radius: 20px;
+    padding:30px
+}

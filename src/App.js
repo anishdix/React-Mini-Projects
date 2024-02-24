@@ -1,7 +1,8 @@
 // import CountryFlag from "./CountryFlag/CountryFlag";
 // import DisplayFullName from "./DisplayFullName/DisplayFullName";
 // import StopWatch from "./StopWatch/StopWatch";
-import Counter from "./Counter/Counter";
+import Calculator from "./Calculator/Calculator";
+// import Counter from "./Counter/Counter";
 
 
 
@@ -11,7 +12,8 @@ function App() {
     // <CountryFlag/>
     // <DisplayFullName/>
     // <StopWatch/>
-    <Counter/>
+    // <Counter/>
+    <Calculator/>
   )
 }
 
