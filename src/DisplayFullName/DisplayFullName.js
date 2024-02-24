@@ -18,12 +18,15 @@ const DisplayFullName = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!firstName) {
-      setError(true);
-      setFullName("")
+        alert('Please fill in both fields');
+      // setFullName("")
     }
     else if(!lastName){
-      setError(true)
-      setFullName("")} else {
+      alert('Please fill in both fields');
+      // setFullName("")
+    
+    }
+       else {
       const fullNameResult = `${firstName} ${lastName}`;
       setFullName(fullNameResult);
       setError(false);
