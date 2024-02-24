@@ -19,15 +19,20 @@ const DisplayFullName = () => {
     e.preventDefault()
     if (!firstName) {
       setError('Please fill in the First Name.');
+      setFullName("")
     }
-    else if(!lastName){setError("please fill in the last name")} else {
+    else if(!lastName){
+      setError("please fill in the last name")
+      setFullName("")} else {
       const fullNameResult = `${firstName} ${lastName}`;
       setFullName(fullNameResult);
       setError('');
+
     }
   };
 
   return (
+    <div>
     <form onSubmit={handleSubmit}>
       <h2>Full Name Display</h2>
       <div className={styles.firstName}>
@@ -50,12 +55,16 @@ const DisplayFullName = () => {
           <p>{error}</p>
         </div>
       )}
-      {fullName && (
+      
+    </form>
+<div>
+{fullName && (
         <div>
           <p>Full Name: {fullName}</p>
         </div>
       )}
-    </form>
+</div>
+</div>
   );
 };
 
