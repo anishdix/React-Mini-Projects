@@ -5,7 +5,7 @@ const DisplayFullName = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [fullName, setFullName] = useState('');
-  const [error, setError] = useState('');
+  const [error, setError] = useState(false);
 
   const handleFirstNameChange = (e) => {
     setFirstName(e.target.value);
@@ -18,15 +18,15 @@ const DisplayFullName = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!firstName) {
-      setError('Please fill in the First Name.');
+      setError(true);
       setFullName("")
     }
     else if(!lastName){
-      setError("please fill in the last name")
+      setError(true)
       setFullName("")} else {
       const fullNameResult = `${firstName} ${lastName}`;
       setFullName(fullNameResult);
-      setError('');
+      setError(false);
 
     }
   };
