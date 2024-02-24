@@ -50,11 +50,7 @@ const DisplayFullName = () => {
       <div>
         <button type='submit'>Submit</button>
       </div>
-      {error && (
-        <div style={{ color: 'red' }}>
-          <p>{error}</p>
-        </div>
-      )}
+      
       
     </form>
 <div>
