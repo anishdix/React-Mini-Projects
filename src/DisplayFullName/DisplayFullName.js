@@ -62,13 +62,13 @@ const DisplayFullName = () => {
       }
       
     </form>
-<div>
+
 {fullName && (
         <div>
           <p>Full Name: {fullName}</p>
         </div>
       )}
-</div>
+
 </div>
   );
 };
