@@ -5,7 +5,7 @@ const DisplayFullName = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [fullName, setFullName] = useState('');
-  const [error, setError] = useState(false);
+  const [error, setError] = useState("");
 
   const handleFirstNameChange = (e) => {
     setFirstName(e.target.value);
@@ -18,18 +18,18 @@ const DisplayFullName = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!firstName) {
-        alert('Please fill in both fields');
+        setError('Please fill in both fields');
       // setFullName("")
     }
     else if(!lastName){
-      alert('Please fill in both fields');
+      setError('Please fill in both fields');
       // setFullName("")
     
     }
        else {
       const fullNameResult = `${firstName} ${lastName}`;
       setFullName(fullNameResult);
-      setError(false);
+      setError("");
 
     }
   };
@@ -53,7 +53,13 @@ const DisplayFullName = () => {
       <div>
         <button type='submit'>Submit</button>
       </div>
-      
+      {error&&(
+        <div>
+          <p style={{color:"red"}}>{error}</p>
+        </div>
+      )
+
+      }
       
     </form>
 <div>
