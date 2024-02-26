@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import styles from "./StopWatch.module.css"
+import styles from "./App.module.css"
 
-function StopWatch() {
-  const [timer,setTimer]=useState(0)
+function App() {
+  const [timer,setTimer]=useState(26789)
   const [running,setRunning]=useState(false)
 
   useEffect(()=>{
@@ -18,12 +18,16 @@ function StopWatch() {
     return()=>{clearInterval(interval)}
   },[running])
 
-
   function formatTime(time)
   {
+    let hr=Math.floor(time/(60*60))
     let min=Math.floor(time/60)
+    if(min>59)
+    {
+      min=min%60
+    }
     let remainSec=time%60
-    return (`Time: ${min}:${remainSec<10?"0":""}${remainSec}`)
+    return (`Time:${hr}:${min<10?"0":""}${min}:${remainSec<10?"0":""}${remainSec}`)
   }
   const handleReset=()=>{
     setRunning(false)
@@ -34,19 +38,21 @@ function StopWatch() {
     setRunning(!running)
   }
   return (
-    <div className={styles.container}>
+    <div className={styles.app}>
       <h3>Stopwatch</h3>
       <p>
       {formatTime(timer)}
       </p>
       <div>
 
-      <button onClick={handleStartStop}>{running?"Stop":"Start"}</button>
-      <button onClick={handleReset} >Reset</button>
+      <button onClick={handleStartStop}>{running?"stop":"start"}</button>
+      <button onClick={handleReset} >reset</button>
       </div>
       
     </div>
   );
 }
 
-export default StopWatch;
+export default App;
+
+

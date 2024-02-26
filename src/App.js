@@ -2,7 +2,8 @@
 // import CountryStateCity from "./CountryStateCity/CountryStateCity";
 // import Login from "./Login/Login";
 // import ClassCounter from "./ClassCounter/ClassCounter";
-import PaginationApp from "./PaginationApp/PaginationApp";
+import Dictionary from "./Dictionary/Dictionary";
+// import PaginationApp from "./PaginationApp/PaginationApp";
 // import SearchCountry from "./SearchCountry/SearchCountry";
 // import DisplayFullName from "./DisplayFullName/DisplayFullName";
 // import StopWatch from "./StopWatch/StopWatch";
@@ -23,7 +24,8 @@ function App() {
     // <Login/>
     // <SearchCountry/>
     // <ClassCounter/>
-    <PaginationApp/>
+    // <PaginationApp/>
+    <Dictionary/>
   )
 }
 
