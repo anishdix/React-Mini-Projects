@@ -1,7 +1,8 @@
 // import CountryFlag from "./CountryFlag/CountryFlag";
 // import CountryStateCity from "./CountryStateCity/CountryStateCity";
 // import Login from "./Login/Login";
-import ClassCounter from "./ClassCounter/ClassCounter";
+// import ClassCounter from "./ClassCounter/ClassCounter";
+import PaginationApp from "./PaginationApp/PaginationApp";
 // import SearchCountry from "./SearchCountry/SearchCountry";
 // import DisplayFullName from "./DisplayFullName/DisplayFullName";
 // import StopWatch from "./StopWatch/StopWatch";
@@ -21,7 +22,8 @@ function App() {
     // <CountryStateCity/>
     // <Login/>
     // <SearchCountry/>
-    <ClassCounter/>
+    // <ClassCounter/>
+    <PaginationApp/>
   )
 }
 

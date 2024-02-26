@@ -26,7 +26,7 @@ export default class ClassCounter extends React.Component {
   // State -> It Changes using SetState -> Calls render() Again but attaches the latest state value
 
   render() {
-    console.log("Render got Called with value ", this.state.count);
+    // console.log("Render got Called with value ", this.state.count);
     return (
       <div>
         <h1 > Counter App </h1>
