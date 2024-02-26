@@ -14,12 +14,14 @@ const SearchCountry = () => {
             .then((res)=>setCountry(res.data.filter((ele)=>{
                 // console.log(ele.name.common.slice(0,searchData.length))
                 return  ele.name.common.includes(searchData)})))
+                .catch((err)=>console.error(err))
            
         }
         else
         {
             axios.get(`https://restcountries.com/v3.1/all`)
             .then((res)=>setCountry(res.data))
+            .catch((err)=>console.error(err))
             
         }
 
