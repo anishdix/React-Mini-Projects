@@ -38,7 +38,7 @@ const Dictionary = () => {
         <input type="text" placeholder='Search for a word' onChange={e=>{setSearch(e.target.value.toLowerCase())}}/>
         <button onClick={handleClick}>Search</button>
       </div>
-      <h4>Defination:</h4>
+      <h4>Definition:</h4>
       {setResult && (<div>{result}</div>)}
       
     </div>
