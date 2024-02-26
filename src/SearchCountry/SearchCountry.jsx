@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import styles from "./SearchCountry.module.css"
+import "./SearchCountry.css"
 
 const SearchCountry = () => {
     const[searchData,setSearchData]=useState("")
@@ -39,7 +40,7 @@ const SearchCountry = () => {
       country.map((ele)=>(
   
           
-  <div key={ele.cca3} className={styles.countryCard}>
+  <div key={ele.cca3} className="countryCard">
   <img src={ele.flags.png}
         alt={ele.flags.alt}
         className={styles.image}/>
