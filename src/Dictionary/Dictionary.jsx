@@ -39,7 +39,7 @@ const Dictionary = () => {
         <button onClick={handleClick}>Search</button>
       </div>
       <h4>Defination:</h4>
-      {setResult && (<p>{result}</p>)}
+      {setResult && (<div>{result}</div>)}
       
     </div>
   )
