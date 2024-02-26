@@ -1,6 +1,7 @@
 // import CountryFlag from "./CountryFlag/CountryFlag";
 // import CountryStateCity from "./CountryStateCity/CountryStateCity";
-import Login from "./Login/Login";
+// import Login from "./Login/Login";
+import SearchCountry from "./SearchCountry/SearchCountry";
 // import DisplayFullName from "./DisplayFullName/DisplayFullName";
 // import StopWatch from "./StopWatch/StopWatch";
 // import Calculator from "./Calculator/Calculator";
@@ -17,7 +18,8 @@ function App() {
     // <Counter/>
     // <Calculator/>
     // <CountryStateCity/>
-    <Login/>
+    // <Login/>
+    <SearchCountry/>
   )
 }
 
