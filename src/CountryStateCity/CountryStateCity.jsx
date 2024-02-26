@@ -41,11 +41,11 @@ const CountryStateCity = () => {
           <option disabled value="">Select Country</option>
           {country.map((country)=>{return <option value={country} key={country}>{country}</option>})}
         </select>
-        <select onChange={((e)=>setSelectedState(e.target.value))} value={selectedState} disabled={!selectedCountry}>
+        <select onChange={e=>setSelectedState(e.target.value)} value={selectedState} disabled={!selectedCountry}>
         <option disabled value="">Select State</option>
         {state.map((state)=>{return <option value={state} key={state}>{state}</option>})}
         </select>
-        <select onChange={((e)=>setSelectedCity(e.target.value))} value={selectedCity} disabled={!selectedCountry&&!selectedState}>
+        <select onChange={((e)=>setSelectedCity(e.target.value))} value={selectedCity} disabled={!selectedCountry && !selectedState}>
         <option disabled value="">Select City</option>
         {city.map((city)=>{return <option value={city} key={city}>{city}</option>})}
         </select>
