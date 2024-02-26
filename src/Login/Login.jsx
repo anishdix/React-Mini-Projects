@@ -7,8 +7,13 @@ const Login = () => {
     const[error,setError]=useState("")
     function handleSubmit(e){
         e.preventDefault()
-        setSubmitted(true)
-        if(username==="user"&&password==="password")
+        
+        
+        if(!username || !password)
+        {
+            alert("fill details")
+        }
+        else if(username==="user"&&password==="password")
         {
             setSubmitted(true)
             setError("")
