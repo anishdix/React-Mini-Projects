@@ -13,7 +13,7 @@ const SearchCountry = () => {
             axios.get(`https://restcountries.com/v3.1/name/${searchData}`)
             .then((res)=>setCountry(res.data.filter((ele)=>{
                 // console.log(ele.name.common.slice(0,searchData.length))
-                return  ele.name.common.includes(searchData)})))
+                return  ele.name.common.toLowerCase().includes(searchData.toLowerCase())})))
                 .catch((err)=>console.error(err))
            
         }
@@ -39,7 +39,7 @@ const SearchCountry = () => {
       country.map((ele)=>(
   
           
-  <div key={ele.cca3} className={styles.container}>
+  <div key={ele.cca3} className={styles.countryCard}>
   <img src={ele.flags.png}
         alt={ele.flags.alt}
         className={styles.image}/>
