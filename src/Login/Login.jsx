@@ -28,7 +28,7 @@ const Login = () => {
     <div>
         <h2>Login Page</h2>
         { submitted?
-        (<div>Welcome,user</div>):
+        (<div>Welcome, user</div>):
         <form onSubmit={handleSubmit}>
             {error&&(<p>{error}</p>)}
             <div>
