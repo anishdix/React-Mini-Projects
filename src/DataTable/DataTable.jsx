@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 const DataTable = () => {
     
-const data=[
+const  data=[
 
     { date: "2022-09-01", views: 100, article: "Article 1" },
 
@@ -16,11 +16,14 @@ const data=[
 
 ]
 
+
+
 const [tableValues,setTableValues]=useState([])
 useEffect(()=>{
-setTableValues(data)
+    setTableValues(data)
 },[])
 
+// const memoizedData = useMemo(() => tableValues, [tableValues]);
 
 const handleData=()=>{
     setTableValues(data.sort((a,b)=>{

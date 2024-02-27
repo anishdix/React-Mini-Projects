@@ -10,7 +10,8 @@
 // import Calculator from "./Calculator/Calculator";
 // import Counter from "./Counter/Counter";
 
-import DataTable from "./DataTable/DataTable";
+// import DataTable from "./DataTable/DataTable";
+import Modal from "./Modal/Modal";
 
 
 
@@ -28,7 +29,8 @@ function App() {
     // <ClassCounter/>
     // <PaginationApp/>
     // <Dictionary/>
-    <DataTable/>
+    // <DataTable/>
+    <Modal/>
   )
 }
 
