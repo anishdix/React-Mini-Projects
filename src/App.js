@@ -2,13 +2,15 @@
 // import CountryStateCity from "./CountryStateCity/CountryStateCity";
 // import Login from "./Login/Login";
 // import ClassCounter from "./ClassCounter/ClassCounter";
-import Dictionary from "./Dictionary/Dictionary";
+// import Dictionary from "./Dictionary/Dictionary";
 // import PaginationApp from "./PaginationApp/PaginationApp";
 // import SearchCountry from "./SearchCountry/SearchCountry";
 // import DisplayFullName from "./DisplayFullName/DisplayFullName";
 // import StopWatch from "./StopWatch/StopWatch";
 // import Calculator from "./Calculator/Calculator";
 // import Counter from "./Counter/Counter";
+
+import DataTable from "./DataTable/DataTable";
 
 
 
@@ -25,7 +27,8 @@ function App() {
     // <SearchCountry/>
     // <ClassCounter/>
     // <PaginationApp/>
-    <Dictionary/>
+    // <Dictionary/>
+    <DataTable/>
   )
 }
 
