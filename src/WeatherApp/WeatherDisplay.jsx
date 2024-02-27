@@ -31,9 +31,9 @@ const WeatherDisplay = ({city}) => {
     },[city])
   return (
     <div >
-        {loading && <p>Loading data..</p>}
+        {loading && <p>Loading data...</p>}
         {!loading && data&&(
-            <div className={styles.weatherDisplay}>
+            <div className="weather-cards">
                 <WeatherCard title="Tempature" weatherData={`${data.current.temp_c}°C`} />
                 <WeatherCard title="Humidity" weatherData={`${data.current.humidity}%`} />
                 <WeatherCard title="Condition" weatherData={`${data.current.condition.text}°C`} />
