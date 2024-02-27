@@ -12,7 +12,8 @@
 
 // import DataTable from "./DataTable/DataTable";
 // import Modal from "./Modal/Modal";
-import WeatherApp from "./WeatherApp/WeatherApp";
+import SpellCheckApp from "./SpellCheckApp/SpellCheckApp";
+// import WeatherApp from "./WeatherApp/WeatherApp";
 
 
 
@@ -32,7 +33,8 @@ function App() {
     // <Dictionary/>
     // <DataTable/>
     // <Modal/>
-    <WeatherApp/>
+    // <WeatherApp/>
+    <SpellCheckApp/>
   )
 }
 
