@@ -11,7 +11,8 @@
 // import Counter from "./Counter/Counter";
 
 // import DataTable from "./DataTable/DataTable";
-import Modal from "./Modal/Modal";
+// import Modal from "./Modal/Modal";
+import WeatherApp from "./WeatherApp/WeatherApp";
 
 
 
@@ -30,7 +31,8 @@ function App() {
     // <PaginationApp/>
     // <Dictionary/>
     // <DataTable/>
-    <Modal/>
+    // <Modal/>
+    <WeatherApp/>
   )
 }
 

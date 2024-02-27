@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-
+import SearchBar from './SearchBar'
+import WeatherDisplay from './WeatherDisplay'
+import styles from "./WeatherApp.module.css"
 const WeatherApp = () => {
     const [city,setCity]=useState("")
     
@@ -9,9 +11,9 @@ const WeatherApp = () => {
     }
    
   return (
-    <div>
+    <div className={styles.container}>
       <SearchBar onSearch={handleSearch} />
-      <WeatherCard city={city}/>
+      <WeatherDisplay city={city}/>
     </div>
   )
 }

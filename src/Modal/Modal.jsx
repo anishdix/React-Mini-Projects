@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import "./Modal.css"
 
 const Modal = () => {
-    const[username,setUsername]=useState("")
-    const[email,setEmail]=useState("")
     const[phone,setPhone]=useState("")
     const[date,setDate]=useState("")
     const[clicked,setClicked]=useState(false)
@@ -47,9 +45,9 @@ const Modal = () => {
             <form onSubmit={handleSubmit}>
                 <h3>Fill Details</h3>
                 <label htmlFor="username">Username:</label>
-                <input type="text" id='username' onChange={e=>setUsername(e.target.value)} required/>
+                <input type="text" id='username' required/>
                 <label htmlFor="email">Email Address:</label>
-                <input type="email" id='email' onChange={e=>setEmail(e.target.value)} required />
+                <input type="email" id='email' required />
                 <label htmlFor="phone">Phone Number:</label>
                 <input type="number" id='phone' onChange={e=>setPhone(e.target.value)} required/>
                 <label htmlFor="dob">Date of Birth:</label>
