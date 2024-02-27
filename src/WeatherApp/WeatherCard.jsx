@@ -1,9 +1,8 @@
 import React from 'react'
-import styles from "./WeatherApp.module.css"
-
+import "./WeatherApp.css"
 const WeatherCard = ({title,weatherData}) => {
   return (
-    <div className={styles.weatherCard}>
+    <div className="weather-card">
       <h3>{title}</h3>
       <p>{weatherData}</p>
     </div>

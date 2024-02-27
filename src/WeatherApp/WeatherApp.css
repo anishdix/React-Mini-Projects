@@ -1,0 +1,17 @@
+.weatherCard{
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgb(193, 193, 193);
+}
+.weatherCard h3{
+    font-size: 24px;
+
+
+}
+.weatherCard p{
+    font-size: 20px;
+}
